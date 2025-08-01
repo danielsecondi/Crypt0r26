@@ -80,7 +80,7 @@ def cripta_file():
         scrivi_log("CRIPTA", path, "ERRORE")
 
 def decripta_file():
-    path = filedialog.askopenfilename(title="Seleziona file .dani26", filetypes=[("File cifrati Crypt0r26", "*.crypt0r26")])
+    path = filedialog.askopenfilename(title="Seleziona file .crypt0r26", filetypes=[("File cifrati Crypt0r26", "*.crypt0r26")])
     if not path: return
     pw = simpledialog.askstring("Password", "Inserisci password:", show="*")
     if not pw: return
@@ -125,7 +125,7 @@ def mostra_info():
     print("- Derivazione chiave con SHA-256")
     print("- AES-256 in modalità CBC")
     print("- Log firmati e salvati automaticamente")
-    print("- Estensione .dani26")
+    print("- Estensione .crypt0r26")
     print("© 2025 Daniel. Tutti i diritti riservati.\n")
 
 def main():
